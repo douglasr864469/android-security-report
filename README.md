@@ -20,6 +20,10 @@
 - [Android Security Overview](https://source.android.com/docs/security)
 - [OWASP MASTG](https://mas.owasp.org/MASTG/)
 
+## 联系方式
+
+咨询安卓系统安全相关问题，请联系 Telegram：[t.me/one00190](https://t.me/one00190)
+
 ---
 
 *本仓库内容仅供安全学习与防御研究使用。*
