@@ -1,6 +1,6 @@
 # Android 系统漏洞安全研究资料
 
-从防御视角梳理 Android 系统攻击面、漏洞类型、典型案例与缓解措施的研究资料，含一份总览报告与一份缺陷类型手册。
+从防御视角梳理 Android 系统攻击面、漏洞类型、典型案例、编号与公告体系的公开研究资料，含一份总览报告与两份专题手册。
 
 ## 内容
 
@@ -8,6 +8,8 @@
   启动链与信任模型、攻击面分析、漏洞类型、8 个已修复典型案例、利用链与缓解、防御建议
 - **通用漏洞类型手册**：[android-common-system-vulnerabilities.md](android-common-system-vulnerabilities.md)
   分层攻击面速览、11 类缺陷清单（识别特征与缓解）、自查观测点与判读、分角色行动清单、类型速查表
+- **漏洞编号与公告体系手册**：[android-cve-and-security-bulletins.md](android-cve-and-security-bulletins.md)
+  CVE / Android bug ID / OSV / CWE / 厂商编号的对应关系、SPL 机制、Android 与厂商公告分层结构、逐字段读公告、查询与核对实操
 - **适用对象**：安全学习者、企业安全管理者、Android 开发者、设备厂商与 ROM 维护者
 
 ## 说明
