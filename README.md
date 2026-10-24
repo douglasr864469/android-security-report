@@ -22,7 +22,7 @@
 
 ## 联系方式
 
-咨询安卓系统安全相关问题，请联系 Telegram：[t.me/one00190](https://t.me/one00190)
+咨询 Android 系统详情请联系 https://t.me/one00190
 
 ---
 
