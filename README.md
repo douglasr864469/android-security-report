@@ -1,6 +1,6 @@
 # Android 系统漏洞安全研究资料
 
-从防御视角梳理 Android 系统攻击面、漏洞类型、典型案例、编号与公告体系、底层架构与研究方法的公开研究资料，含一份总览报告、六份专题手册与一篇底层漏洞研究文章。
+从防御视角梳理 Android 系统攻击面、漏洞类型、典型案例、编号与公告体系、底层架构与研究方法的公开研究资料，含一份总览报告、七份专题手册与一篇底层漏洞研究文章。
 
 ## 内容
 
@@ -20,6 +20,8 @@
   Android 严重级别与 CVSS 3.1/4.0 口径对照、安全上下文阶梯与级别修饰符、OSV 与 CISA KEV 字段读法、可利用性要素清单、P0–P3 处置矩阵、设备暴露面自评与加固基线、10 条常见误读
 - **TEE、密钥管理与设备认证手册**：[android-tee-key-attestation.md](android-tee-key-attestation.md)
   沿「信任根 → 密钥存储 → 凭据认证 → 状态证明 → 存储加密」一条链展开：AVB 2.0 与四色状态、Rollback Protection、KeyMint 三档安全等级与 StrongBox 要求、Gatekeeper 与 HardwareAuthToken 实名、密钥证明的 RootOfTrust ASN.1 结构与 verifiedBootHash 用法、FBE 的 DE/CE 与 CE 密钥实际解封路径；含 19 条逐条核实归属的公开案例、17 条常见误传纠正与真实可读的属性观测点
+- **Mainline 与 APEX 模块更新手册**：[android-mainline-apex-modules.md](android-mainline-apex-modules.md)
+  把 Mainline 能力与 APEX 容器两个常被混用的概念分开：逐字模块清单与容器形态、APEX 双重签名与版本回滚语义、Mainline 与 Play 两条更新通道及扁平化 APEX 例外、公告中 Mainline 条目的实际形态、SPL 与模块版本不等价的双轴处置；含已核实条目与两处公告空白
 - **适用对象**：安全学习者、企业安全管理者、Android 开发者、设备厂商与 ROM 维护者
 
 ## 说明
