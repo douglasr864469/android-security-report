@@ -1,6 +1,6 @@
 # Android 系统漏洞安全研究资料
 
-从防御视角梳理 Android 系统攻击面、漏洞类型、典型案例、编号与公告体系、底层架构与研究方法的公开研究资料，含一份总览报告、九份专题手册与一篇底层漏洞研究文章。
+从防御视角梳理 Android 系统攻击面、漏洞类型、典型案例、编号与公告体系、底层架构与研究方法的公开研究资料，含一份总览报告、十份专题手册与一篇底层漏洞研究文章。
 
 ## 内容
 
@@ -26,6 +26,8 @@
   现行强度分档 Class 3/2/1 与按用途的组织方式、CDD 生物识别条款门槛、框架 API 与 HAL 版本实名、LSKF→scrypt→synthetic password→CE 密钥的实际链路与 Weaver 限频；含厂商指纹 TA/驱动侧已核实案例与误传纠正
 - **基带与电话子系统手册**：[android-baseband-telephony.md](android-baseband-telephony.md)
   应用处理器与基带两侧的分工及两条修复通道、RIL AIDL 子域实名与内核侧宿主接口（QMI/MHI/QRTR/SMD/BAM/CCCI）、高通/联发科/三星公告的组件命名轴、SPL 与基带固件版本的真实关系、Project Zero 暴露面结论与逐条核实的 modem 类 CVE 归属
+- **多用户、工作资料与进程隔离手册**：[android-multiuser-sandbox-isolation.md](android-multiuser-sandbox-isolation.md)
+  用户类型与 UID 计算公式、DISALLOW_* 策略常量的真实宿主类、SELinux 域与 seccomp 的现行官方措辞、isolated process / USAP / AVF 三层进程隔离边界；含 10 条多用户与 Zygote 侧已核实案例、15 条常见误传纠正与可执行的实况观测清单
 - **适用对象**：安全学习者、企业安全管理者、Android 开发者、设备厂商与 ROM 维护者
 
 ## 说明
