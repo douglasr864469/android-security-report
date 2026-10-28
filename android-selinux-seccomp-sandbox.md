@@ -409,7 +409,7 @@ filegroup {
 | 某 app 域被 allow 到了 `tee_device` / 块设备 / 他人 `/proc` —— 即补丁**违反** neverallow | 属于策略正确性问题：这类规则的存在本身就是平台的成文意图，出现与之矛盾的授权应按高危处理 |
 | 某厂商域过宽（例如把敏感服务放进 `appdomain` 家族） | 看该域实际能触达的对象类；`appdomain` 意味着进入 §7 全套约束，把非应用服务标成 app 域是常见错法 |
 | `seapp_contexts` 的包名点名被误配（应用拿到比预期更高的域） | 直接改变 MAC 粒度，且会触发 §10 的 CTS 域名检查（`SELinuxHostTest#test*Domain` 三条） |
-| 仅 `dontaudit` 导致排障看不见 | 观测缺口不等于风险缺口，参见 [崩溃诊断与日志暴露面](android-diagnostics-log-exposure.md) 的方法论结论 |
+| 仅 `dontaudit` 导致排障看不见 | 观测缺口不等于风险缺口——把「审计里看不到」读成「没有风险」是本末倒置；反之，补一条 `auditallow` 也不等于收紧了边界 |
 
 ---
 
